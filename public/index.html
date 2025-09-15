@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign In</h1>
+    <form id="signinForm">
+      <label>Username
+        <input name="username" type="text" required placeholder="username">
+      </label>
+      <label>Passphrase
+        <input name="passphrase" type="password" required placeholder="passphrase">
+      </label>
+      <button type="submit">Continue</button>
+    </form>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

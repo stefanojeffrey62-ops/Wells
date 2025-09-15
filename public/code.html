@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Verification Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Enter Verification Code</h1>
+    <form id="codeForm">
+      <label>6-digit code
+        <input name="code" type="text" inputmode="numeric" maxlength="6" required placeholder="123456" pattern="[0-9]{6}">
+      </label>
+      <button type="submit">Verify</button>
+    </form>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
